@@ -1,37 +1,22 @@
 /************ Reusebal ************/
 body {
     font-size: 14px;
+    font-family: "Ubuntu Condensed, Roboto Condensed", sans-serif;
 }
 
-/* .container {
-    padding-left: 15px;
-    padding-right: 15px;
-} */
-
-ul {
-    margin-left: 0;
-}
-
-.color-change {
-    color: #0aaaaa;
-    font-weight: normal;
-}
-
-.head,
-.what-we-do-heading {
-    color: #000;
-    font-size: 50px;
-    font-weight: normal;
-    line-height: 52px;
-    padding-bottom: 35px;
+h2 {
+    font-family: "Ubuntu Condensed";
+    font-size: 3.5rem;
 }
 
 .btn {
+    font-family: "Roboto Condensed";
     border: 1px solid;
     padding: 10px 20px;
     text-transform: uppercase;
     font-weight: 700;
     border-radius: 0%;
+    color: #000;
 }
 
 .btn:hover {
@@ -43,8 +28,58 @@ ul {
     box-shadow: none;
 }
 
+.secondary-btn {
+    color: #fff;
+}
+.secondary-btn:hover  {
+    color: #0aaaaa;
+}
 .read-btn {
     color: #221f1f;
+}
+
+.head {
+   color: #000;
+}
+.head-two {
+   color: #fff;
+   margin-bottom: 20px;
+}
+
+.para {
+    margin-bottom: 30px; 
+    padding-bottom: 30px; 
+    font-size: 18px; 
+    font-weight: bold;
+}
+.contant {
+    padding-bottom: 30px;
+    line-height: 35px;
+    font-size: 18px;
+}
+
+ul {
+    margin-left: 0;
+}
+
+.right-section {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Roboto Condensed";
+}
+
+.right-border {
+    border-right: 1px solid #aaaaaa;
+}
+
+
+.color-change {
+    color: #0aaaaa;
+    font-weight: normal;
 }
 
 .breadcrumb {
@@ -67,9 +102,9 @@ ul {
 }
 
 #logo {
-    font-size: 2.2rem;
+    font-size: 2.7rem;
     font-weight: 700;
-    font-family: sans-serif;
+    font-family: 'Roboto Condensed';
 }
 
 .logo-color {
@@ -84,17 +119,13 @@ ul {
     padding-left: 15px !important;
     padding-right: 15px !important;
     text-transform: uppercase;
+    font-family: Roboto Condensed;
+    font-size: 1.2rem;
     font-weight: 700;
 }
 
 #newsroom-btn {
     margin-top: 5%;
-    /* margin-bottom: 5%; */
-    color: #fff;
-    border: 1px solid;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    font-weight: 700;
 }
 
 #newsroom-btn:hover {
@@ -108,14 +139,11 @@ h2 {
 }
 
 .who-we-are {
-    /* position: relative; */
     padding: 77px 0 90px;
 }
-
-.who-we-are p {
-    padding-bottom: 30px;
-    line-height: 35px;
-    font-size: 18px;
+.who-we-are .head,
+#sectors .head {
+    margin-bottom: 20px;
 }
 
 /* banner */
@@ -148,10 +176,6 @@ h2 {
     padding: 77px 0 90px;
 }
 
-.what-we-do-heading {
-    color: #fff;
-}
-
 .what-we-do-wrapper {
     position: relative;
 }
@@ -165,14 +189,6 @@ h2 {
     position: absolute;
     bottom: -8%;
     left: 42%;
-}
-
-.what-we-do-wrapper #more-btn {
-    color: #fff;
-}
-
-.what-we-do-wrapper #more-btn:hover {
-    color: #0aaaaa;
 }
 
 /* sectors */
@@ -201,10 +217,11 @@ h2 {
     display: block;
     text-align: center;
     padding: 30px 0;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
     color: #221f1f;
+    font-family: 'Roboto Condensed';
 }
 
 #sectors-inner .sectors-title:hover {
@@ -304,14 +321,6 @@ h2 {
 
 }
 
-#work-with-us-btn:hover {
-    color: #0aaaaa;
-}
-
-#work-with-us-btn {
-    color: #fff;
-}
-
 #work-with-us .withus-content {
     margin-right: 30%;
 }
@@ -403,9 +412,11 @@ h2 {
 
 .accordion-button {
     padding: 0.5rem 0;
-    font-weight: 600;
+    font-size: 17px;
+    font-weight: 700;
     line-height: 37px;
-    font-size: 1.1rem;
+    font-family: sans-serif;
+    /* font-size: 16px; */
 }
 
 .accordion-button:not(.collapsed) {
@@ -429,23 +440,14 @@ h2 {
 .accordion-body .item a {
     color: #221f1f;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
+    font-weight: 700;
+    font-size: 17px;
     line-height: 47px;
 }
 
 #v-pills-tabContent h5 {
     font-size: 1rem;
     font-weight: 700;
-}
-
-#v-pills-tabContent p {
-    margin-bottom: 2rem;
-}
-
-/* Careers */
-#careers-form {
-    margin-right: 50px;
 }
 
 .careers-img-box {
@@ -512,8 +514,10 @@ h2 {
 }
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
-    color: #fff;
     background-color: transparent;
+    font-family: 'Roboto Condensed';
+    font-size: 20px;
+    color: #fff;
     border: none;
 }
 
@@ -536,7 +540,7 @@ h2 {
 }
 
 .Finance-and-Banking {
-    margin: 0 -30px;
+    /* margin: 0 -30px; */
     /* padding: 60px 30px; */
 }
 
@@ -578,12 +582,13 @@ h2 {
 
 .right-Finance-and-Banking-img {
     margin-right: 20px;
+    width: 40px;
 }
 
 .right-Finance-and-Banking-title {
     text-transform: capitalize;
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .nav-pills .nav-link, .nav-pills .show>.nav-link .right-Finance-and-Banking-title {
@@ -594,7 +599,7 @@ h2 {
     padding-left: 0;
     font-weight: 800;
     font-size: 16px;
-    padding: 20px 20px 20px 0;
+    /* padding: 20px 20px 20px 0; */
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link .right-Finance-and-Banking-title {
@@ -684,6 +689,12 @@ h2 {
     font-size: 14px;
 }
 
+.work-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 /* Media Queary */
 @media (max-width: 992px) {
     #sectors-inner .sectors-inner-box {
@@ -703,9 +714,9 @@ h2 {
         margin: 0;
     }
 
-    #v-pills-tab {
+    /* #v-pills-tab {
         padding-top: 40px;
-    }
+    } */
 }
 
 
@@ -716,10 +727,42 @@ h2 {
 
     .who-we-are {
         padding-right: 0;
+        padding: 34px 0 40px;
+    }
+    .who-we-are .head {
+        padding-bottom: 10px;
+    }
+    .contant {
+        padding-bottom: 10px;
+    }
+    #what-we-do .head-two {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .tab-content>.active {
+        margin-left: 2%;
+        margin-right: 2%;
     }
 
     .newsroom-inner {
         padding-bottom: 40px;
+    }
+
+    .work-wrapper {
+        flex-direction: column;
+    }
+    .right-border {
+        border: none;
+    }
+    .para {
+        padding-bottom: 0px; 
+        margin-bottom: 0;
+    }
+    #newsroom-btn {
+        margin-top: 0%;
+    }
+    .location-wrapper .locations-inner {
+        margin-right: 0%;
     }
 }
 

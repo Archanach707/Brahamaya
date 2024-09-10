@@ -1,363 +1,601 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <!-- image file -->
-    <link rel="stylesheet" href="./assets/image" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Ubuntu+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- CSS file -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Brahamaya</title>
   </head>
   <body>
-    <div class="Brahmayya-wrapper"> 
-        <!-- header -->
-        <nav id="navBar" class="navbar navbar-expand-lg navbar-light">
-            <div class="container container-sm container-lg container-md">
-            <a id="logo" class="navbar-brand" href="index.html">Brahamaya<strong class="logo-color">&</strong>co.</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span  class="navbar-toggler-icon"></span>
+    <div class="Brahmaya-wrapper">
+      <!-- header -->
+      <nav id="navBar" class="navbar navbar-expand-lg navbar-light">
+        <div class="container-lg">
+          <a id="logo" class="navbar-brand" href="index.html"
+            >Brahamaya<strong class="logo-color">&</strong>co.</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link navigation-link active"
+                  aria-current="page"
+                  href="#who-we-are"
+                  >WHO WE ARE</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navigation-link" href="#what-we-do"
+                  >WHAT WE DO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navigation-link" href="#sectors">SECTORS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navigation-link" href="#work-with-us"
+                  >CAREERS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navigation-link" href="newsrooms.html"
+                  >NEWSROOM</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navigation-link" href="contact.html"
+                  >CONTACT</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Banner -->
+      <div class="banner">
+        <div class="container-lg-fluid p-0">
+          <div
+            id="carouselExampleFade"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./assets/image/auditing-services.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/image/accounting-firm.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/image/ca-firm-chennai.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link navigation-link active" aria-current="page" href="#who-we-are">WHO WE ARE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navigation-link" href="#what-we-do">WHAT WE DO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navigation-link" href="#sectors">SECTORS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navigation-link" href="#work-with-us">CAREERS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navigation-link" href="newsrooms.html">NEWSROOM</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navigation-link " href="contact.html">CONTACT</a>
-                    </li>
-                </ul>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- who-we-are -->
+      <section id="who-we-are" class="half-Wrap">
+        <div class="container-lg">
+          <div class="row">
+            <div class="col-md-6 col-lg-6">
+              <div class="who-we-are">
+                <h2 class="head">Who we are</h2>
+                <p class="contant">
+                  Brahmayya & Co. was founded in 1932 by Mr. Parvataneni
+                  Brahmayya, one of the pioneers of the
+                  <strong class="color-change">Chartered Accountancy</strong>
+                  profession in India. For over 80 years, our mission has been
+                  to render professional services of the highest standard to
+                  clients, upholding the code of conduct and ethics of the
+                  profession. Keeping these grounded principles in
+                  consideration, we continue to grow and expand in our endeavour
+                  to exceed expectations.
+                </p>
+                <a href="history.html" class="read-btn">
+                  <button id="read-btn" type="button" class="btn">
+                    Read More
+                  </button>
+                </a>
+              </div>
             </div>
+            <div class="col-md-6 col-lg-6">
+              <div class="half-img">
+                <img
+                  src="./assets/image/ca-firm-india-1.jpg"
+                  alt=""
+                  class="img-fluid who-we-are-img"
+                />
+              </div>
             </div>
-        </nav>
-        <!-- Banner -->
-        <div class="banner">
-            <div class="container-fluid p-0">
-                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="./assets/image/auditing-services.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./assets/image/accounting-firm.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./assets/image/ca-firm-chennai.jpg" class="d-block w-100" alt="...">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
+          </div>
+        </div>
+      </section>
+      <!-- What we do -->
+      <section id="what-we-do">
+        <div class="container-lg">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="what-we-do-wrapper">
+                <h2 class="head-two">What we do</h2>
+                <nav>
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button
+                      class="nav-link active tabbination"
+                      id="nav-home-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#nav-home"
+                      type="button"
+                      role="tab"
+                      aria-controls="nav-home"
+                      aria-selected="true"
+                    >
+                      Home
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
+                    <button
+                      class="nav-link tabbination"
+                      id="nav-profile-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#nav-profile"
+                      type="button"
+                      role="tab"
+                      aria-controls="nav-profile"
+                      aria-selected="false"
+                    >
+                      Profile
+                    </button>
+                    <button
+                      class="nav-link tabbination"
+                      id="nav-contact-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#nav-contact"
+                      type="button"
+                      role="tab"
+                      aria-controls="nav-contact"
+                      aria-selected="false"
+                    >
+                      Contact
                     </button>
                   </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="nav-home"
+                    role="tabpanel"
+                    aria-labelledby="nav-home-tab"
+                  >
+                    <p class="para">
+                      Across industries, services, and operational levels, we
+                      help our clients ensure excellence by giving them the
+                      benefit of our 80 years of experience. With professional
+                      expertise, and a multidisciplinary skilled team, we are
+                      committed to our mutual progression – client’s success is
+                      our success.
+                    </p>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="nav-profile"
+                    role="tabpanel"
+                    aria-labelledby="nav-profile-tab"
+                  >
+                    <p class="para">
+                      Our focus is on maintaining the foundations that our
+                      reputation has been built on – the values of Brahmayya &
+                      Co. are behind our success, and that of our clients. With
+                      the everlasting commitment, passion and binding
+                      principles, the priority of our professional team is to
+                      ensure that those values keep us going well into the
+                      future.
+                    </p>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="nav-contact"
+                    role="tabpanel"
+                    aria-labelledby="nav-contact-tab"
+                  >
+                    <p class="para">
+                      Our focus in any business relationship lies in
+                      implementing our core competencies –
+                      <strong class="color-change"
+                        >Audit & Assurance, Taxation Consultancy, Corporate
+                        Advisory, Risk Mitigation</strong
+                      >
+                      and
+                      <strong class="color-change">Business Intelligence</strong
+                      >. Customizing our services based on the clients’
+                      requirements has been our key strength.
+                    </p>
+                  </div>
+                </div>
+                <a href="work.html" class="more-btn">
+                  <button id="more-btn" type="button" class="secondary-btn btn">
+                    Read More
+                  </button>
+                </a>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- who-we-are -->
-        <section id="who-we-are" class="half-Wrap"> 
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="row">
-                            <div class="col-md-6 col-lg-6">
-                                <div class="who-we-are">
-                                    <h2 class="head">Who we are</h2>
-                                    <p>
-                                        Brahmayya & Co. was founded in 1932 by Mr. Parvataneni Brahmayya, one of the pioneers of the <strong class="color-change">Chartered Accountancy</strong> profession in India. For over 80 years, our mission has been to render professional services of the highest standard to clients, upholding the code of conduct and ethics of the profession. Keeping these grounded principles in consideration, we continue to grow and expand in our endeavour to exceed expectations.
-                                    </p>
-                                    <a href="history.html" class="read-btn">
-                                        <button id="read-btn" type="button" class="btn ">Read More</button>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-6">
-                                <div class="half-img">
-                                    <img src="./assets/image/ca-firm-india-1.jpg" alt="" class="img-fluid who-we-are-img">
-                                </div>
-                            </div>
-                        </div>
+      </section>
+      <!-- Sectors -->
+      <section id="sectors">
+        <div class="container-lg">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="head">Sectors</h2>
+              <div class="row">
+                <div class="col-md-6 col-lg-4">
+                  <a href="finance-and-banking.html" id="sectors-inner">
+                    <div class="sectors-inner-box">
+                      <img
+                        src="./assets/image/finance-banking-sector.png"
+                        alt=""
+                        class="sectors-img"
+                      />
                     </div>
+                    <sapn class="sectors-title">finance & banking</sapn>
+                  </a>
                 </div>
-            </div>
-        </section>
-        <!-- What we do -->
-        <section id="what-we-do">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="what-we-do-wrapper">
-                            <h2 class="what-we-do-heading">What we do</h2>
-                            <nav>
-                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                    <button class="nav-link active tabbination" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
-                                    <button class="nav-link tabbination" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-                                    <button class="nav-link tabbination" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
-                                </div>
-                            </nav>
-                            <div class="tab-content" id="nav-tabContent">
-                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                                    <p class="para">
-                                        Across industries, services, and operational levels, we help our clients ensure excellence by giving them the benefit of our 80 years of experience. With professional expertise, and a multidisciplinary skilled team, we are committed to our mutual progression – client’s success is our success.
-                                    </p>
-                                </div>
-                                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                                    <p class="para">
-                                        Our focus is on maintaining the foundations that our reputation has been built on – the values of Brahmayya & Co. are behind our success, and that of our clients. With the everlasting commitment, passion and binding principles, the priority of our professional team is to ensure that those values keep us going well into the future.
-                                    </p>
-                                </div>
-                                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                                    <p class="para">
-                                        Our focus in any business relationship lies in implementing our core competencies – <strong class="color-change">Audit & Assurance, Taxation Consultancy, Corporate Advisory, Risk Mitigation</strong> and <strong class="color-change">Business Intelligence</strong>. Customizing our services based on the clients’ requirements has been our key strength.
-                                    </p>
-                                </div>
-                            </div>
-                            <a href="work.html" class="more-btn">
-                                <button id="more-btn" type="button" class="btn">Read More</button>
-                            </a>
-                        </div>
+                <div class="col-md-6 col-lg-4">
+                  <a href="finance-and-banking.html" id="sectors-inner">
+                    <div class="sectors-inner-box">
+                      <img
+                        src="./assets/image/manufacturing-sector.png"
+                        alt=""
+                        class="sectors-img"
+                      />
                     </div>
+                    <span class="sectors-title">manufacturing</span>
+                  </a>
                 </div>
-            </div>
-        </section>
-        <!-- Sectors -->
-        <section id="sectors">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="head">Sectors</h2>
-                        <div class="row">
-                            <div class="col-md-6 col-lg-4">
-                                <a href="finance-and-banking.html" id="sectors-inner">
-                                    <div class="sectors-inner-box ">
-                                        <img src="./assets/image/finance-banking-sector.png" alt="" class="sectors-img" /> 
-                                    </div>
-                                    <sapn class="sectors-title">finance & banking</sapn>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="finance-and-banking.html" id="sectors-inner">
-                                    <div class="sectors-inner-box ">
-                                        <img src="./assets/image/manufacturing-sector.png" alt="" class="sectors-img" />
-                                    </div>
-                                    <span class="sectors-title">manufacturing</span>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="" id="sectors-inner">
-                                    <div class="sectors-inner-box hide">
-                                        <img src="./assets/image/service-sector.png" alt="" class="sectors-img" />
-                                    </div>
-                                    <span class="sectors-title"> service sector</span>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="" id="sectors-inner">
-                                    <div class="sectors-inner-box ">
-                                        <img src="./assets/image/infrastructure-sector.png" alt="" class="sectors-img" />
-                                    </div>
-                                    <span  class="sectors-title">infrastructure</span>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="" id="sectors-inner">
-                                    <div class="sectors-inner-box ">
-                                        <img src="./assets/image/power-sector.png" alt="" class="sectors-img" />
-                                    </div>
-                                    <span class="sectors-title">power</span>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <a href="" id="sectors-inner">
-                                    <div class="sectors-inner-box hide">
-                                        <img src="./assets/image/other-industries.png" alt="" class="sectors-img" />
-                                    </div>
-                                    <span class="sectors-title">other</span>
-                                </a>
-                            </div>
-                        </div>
+                <div class="col-md-6 col-lg-4">
+                  <a href="" id="sectors-inner">
+                    <div class="sectors-inner-box hide">
+                      <img
+                        src="./assets/image/service-sector.png"
+                        alt=""
+                        class="sectors-img"
+                      />
                     </div>
+                    <span class="sectors-title"> service sector</span>
+                  </a>
                 </div>
-                
-              </div>
-        </section>
-        <!-- Newsroom -->
-        <section class="newsroom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="head">Newsroom</h2>
-                        <div class="row">
-                            <div class="col-md-6 col-lg-6">
-                                <div class="newsroom-inner">
-                                    <h4 class="newsroom-title">Our News</h4>
-                                    <div class="newsroom-inner-box" >
-                                        <marquee class="newsroom-inner-wrapper" direction="up" height="100px" scrollamount="4">
-                                            <ul class="list">
-                                                <li class="items"><i class="fa-solid fa-diamond"></i>
-                                                    Brief overview of Standard on Sustainability Assurance Engagements
-                                                    <span class="dates">February, 2023</span>
-                                                </li>
-                                                <li class="items"><i class="fa-solid fa-diamond"></i>
-                                                    Brief overview of Standard on Sustainability Assurance Engagements
-                                                    <span class="dates">February, 2023</span>
-                                                </li>
-                                                <li class="items"><i class="fa-solid fa-diamond"></i>
-                                                    Brief overview of Standard on Sustainability Assurance Engagements
-                                                    <span class="dates">February, 2023</span>
-                                                </li>
-                                                <li class="items"><i class="fa-solid fa-diamond"></i>
-                                                    Brief overview of Standard on Sustainability Assurance Engagements
-                                                    <span class="dates">February, 2023</span>
-                                                </li>
-                                                <li class="items"><i class="fa-solid fa-diamond"></i>
-                                                    Brief overview of Standard on Sustainability Assurance Engagements
-                                                    <span class="dates">February, 2023</span>
-                                                </li>
-                                                <li class="items"><i class="fa-solid fa-diamond"></i>
-                                                    Brief overview of Standard on Sustainability Assurance Engagements
-                                                    <span class="dates">February, 2023</span>
-                                                </li>
-                                            </ul>
-                                        </marquee>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-6">
-                                <div class="newsroom-inner">
-                                    <h4 class="newsroom-title">Newsletter</h4>
-                                    <div class="newsroom-inner-box">
-                                        <marquee class="newsroom-inner-wrapper" direction="up" height="100px" scrollamount="4">
-                                            <ul class="list">
-                                                <li class="items"><i class="fa-solid fa-diamond"></i>
-                                                    Brief overview of Standard on Sustainability Assurance Engagements
-                                                    <span class="dates">February, 2023</span>
-                                                </li>
-                                                <li class="items"><i class="fa-solid fa-diamond"></i>
-                                                    Brief overview of Standard on Sustainability Assurance Engagements
-                                                    <span class="dates">February, 2023</span>
-                                                </li>
-                                                <li class="items"><i class="fa-solid fa-diamond"></i>
-                                                    Brief overview of Standard on Sustainability Assurance Engagements
-                                                    <span class="dates">February, 2023</span>
-                                                </li>
-                                                <li class="items"><i class="fa-solid fa-diamond"></i>
-                                                    Brief overview of Standard on Sustainability Assurance Engagements
-                                                    <span class="dates">February, 2023</span>
-                                                </li>
-                                                <li class="items"><i class="fa-solid fa-diamond"></i>
-                                                    Brief overview of Standard on Sustainability Assurance Engagements
-                                                    <span class="dates">February, 2023</span>
-                                                </li>
-                                                <li class="items"><i class="fa-solid fa-diamond"></i>
-                                                    Brief overview of Standard on Sustainability Assurance Engagements
-                                                    <span class="dates">February, 2023</span>
-                                                </li>
-                                            </ul>
-                                        </marquee>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="newsrooms.html" class="newsroom-btn">
-                                <button id="newsroom-btn" type="button" class="btn">Read More</button>
-                            </a>     
-                        </div>
+                <div class="col-md-6 col-lg-4">
+                  <a href="" id="sectors-inner">
+                    <div class="sectors-inner-box">
+                      <img
+                        src="./assets/image/infrastructure-sector.png"
+                        alt=""
+                        class="sectors-img"
+                      />
                     </div>
+                    <span class="sectors-title">infrastructure</span>
+                  </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <a href="" id="sectors-inner">
+                    <div class="sectors-inner-box">
+                      <img
+                        src="./assets/image/power-sector.png"
+                        alt=""
+                        class="sectors-img"
+                      />
+                    </div>
+                    <span class="sectors-title">power</span>
+                  </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <a href="" id="sectors-inner">
+                    <div class="sectors-inner-box hide">
+                      <img
+                        src="./assets/image/other-industries.png"
+                        alt=""
+                        class="sectors-img"
+                      />
+                    </div>
+                    <span class="sectors-title">other</span>
+                  </a>
                 </div>
               </div>
-        </section>
-        <!-- Work with us -->
-        <section id="work-with-us">
-            <img src="./assets/image/career-img.jpg" class="img-fluid work-with-us-img" alt="" style="filter: brightness(0.3); width: 100%;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="withus-content animated fadeInDown"  data-animated="fadeInDown"> 
-                            <h2 class="work-with-us-head">Work with us</h2>
-                            <p>
-                                For over 8 decades, Brahmayya & Co. has delivered quality services with an emphasis on knowledge, research, experience and professionalism.
-                            </p>   
-                            <a href="careers.html" class="work-with-us-btn">
-                                <button id="work-with-us-btn" type="button" class="btn">APPLY NOW</button>
-                            </a> 
-                        </div>
-                    </div>
-                </div>
             </div>
-        </section>
-        <!-- Locations -->
-        <section class="locations">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="location-wrapper">
-                            <div class="locations-inner">
-                                <h2 class="head">Locations</h2>
-                                <ul class="location-list">
-                                    <li class="location-item">
-                                        <a href="" class="location-link">CHENNAI &nbsp</a>
-                                    </li>
-                                    <li class="location-item">
-                                        <a href="" class="location-link">&nbsp | &nbsp HYDERABAD</a>
-                                    </li>
-                                    <li class="location-item">
-                                        <a href="" class="location-link">&nbsp | &nbsp BENGALURU</a>
-                                    </li>
-                                    <li class="location-item">
-                                        <a href="" class="location-link">&nbsp | &nbsp GURGAON (NEW DELHI)</a>
-                                    </li>
-                                    <li class="location-item">
-                                        <a href="" class="location-link">&nbsp | &nbsp VISAKHAPATNAM</a>
-                                    </li>
-                                    <li class="location-item">
-                                        <a href="" class="location-link">&nbsp | &nbsp VIJAYAWADA</a>
-                                    </li>
-                                    <li class="location-item">
-                                        <a href="" class="location-link">&nbsp | &nbsp GUNTUR</a>
-                                    </li>
-                                    <li class="location-item">
-                                        <a href="" class="location-link">&nbsp | &nbsp KAKINADA</a>
-                                    </li>
-                                    <li class="location-item">
-                                        <a href="" class="location-link">&nbsp | &nbsp TANUKU</a>
-                                    </li>
-                                    <li class="location-item">
-                                        <a href="" class="location-link">&nbsp | &nbsp ADONI</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- footer -->
-                            <footer class="footer">
-                                <a href="location.html" class="loc-link">© Brahmayya & Co.</a>
-                            </footer>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </section>
+      <!-- Newsroom -->
+      <section class="newsroom">
+        <div class="container-lg">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="head-two">Newsroom</h2>
             </div>
-        </section>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-6">
+              <div class="newsroom-inner">
+                <h4 class="newsroom-title">Our News</h4>
+                <div class="newsroom-inner-box">
+                  <marquee
+                    class="newsroom-inner-wrapper"
+                    direction="up"
+                    height="100px"
+                    scrollamount="4"
+                  >
+                    <ul class="list">
+                      <li class="items">
+                        <i class="fa-solid fa-diamond"></i>
+                        Brief overview of Standard on Sustainability Assurance
+                        Engagements
+                        <span class="dates">February, 2023</span>
+                      </li>
+                      <li class="items">
+                        <i class="fa-solid fa-diamond"></i>
+                        Brief overview of Standard on Sustainability Assurance
+                        Engagements
+                        <span class="dates">February, 2023</span>
+                      </li>
+                      <li class="items">
+                        <i class="fa-solid fa-diamond"></i>
+                        Brief overview of Standard on Sustainability Assurance
+                        Engagements
+                        <span class="dates">February, 2023</span>
+                      </li>
+                      <li class="items">
+                        <i class="fa-solid fa-diamond"></i>
+                        Brief overview of Standard on Sustainability Assurance
+                        Engagements
+                        <span class="dates">February, 2023</span>
+                      </li>
+                      <li class="items">
+                        <i class="fa-solid fa-diamond"></i>
+                        Brief overview of Standard on Sustainability Assurance
+                        Engagements
+                        <span class="dates">February, 2023</span>
+                      </li>
+                      <li class="items">
+                        <i class="fa-solid fa-diamond"></i>
+                        Brief overview of Standard on Sustainability Assurance
+                        Engagements
+                        <span class="dates">February, 2023</span>
+                      </li>
+                    </ul>
+                  </marquee>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+              <div class="newsroom-inner">
+                <h4 class="newsroom-title">Newsletter</h4>
+                <div class="newsroom-inner-box">
+                  <marquee
+                    class="newsroom-inner-wrapper"
+                    direction="up"
+                    height="100px"
+                    scrollamount="4"
+                  >
+                    <ul class="list">
+                      <li class="items">
+                        <i class="fa-solid fa-diamond"></i>
+                        Brief overview of Standard on Sustainability Assurance
+                        Engagements
+                        <span class="dates">February, 2023</span>
+                      </li>
+                      <li class="items">
+                        <i class="fa-solid fa-diamond"></i>
+                        Brief overview of Standard on Sustainability Assurance
+                        Engagements
+                        <span class="dates">February, 2023</span>
+                      </li>
+                      <li class="items">
+                        <i class="fa-solid fa-diamond"></i>
+                        Brief overview of Standard on Sustainability Assurance
+                        Engagements
+                        <span class="dates">February, 2023</span>
+                      </li>
+                      <li class="items">
+                        <i class="fa-solid fa-diamond"></i>
+                        Brief overview of Standard on Sustainability Assurance
+                        Engagements
+                        <span class="dates">February, 2023</span>
+                      </li>
+                      <li class="items">
+                        <i class="fa-solid fa-diamond"></i>
+                        Brief overview of Standard on Sustainability Assurance
+                        Engagements
+                        <span class="dates">February, 2023</span>
+                      </li>
+                      <li class="items">
+                        <i class="fa-solid fa-diamond"></i>
+                        Brief overview of Standard on Sustainability Assurance
+                        Engagements
+                        <span class="dates">February, 2023</span>
+                      </li>
+                    </ul>
+                  </marquee>
+                </div>
+              </div>
+            </div>
+            <a href="newsrooms.html" class="newsroom-btn text-lg-start text-center">
+              <button id="newsroom-btn" type="button" class="secondary-btn btn">
+                Read More
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Work with us -->
+      <section id="work-with-us">
+        <img
+          src="./assets/image/career-img.jpg"
+          class="img-fluid work-with-us-img"
+          alt=""
+          style="filter: brightness(0.3); width: 100%"
+        />
+        <div class="container-lg">
+          <div class="row">
+            <div class="col-sm-12">
+              <div
+                class="withus-content animated fadeInDown"
+                data-animated="fadeInDown"
+              >
+                <h2 class="head-two work-with-us-head">Work with us</h2>
+                <p>
+                  For over 8 decades, Brahmayya & Co. has delivered quality
+                  services with an emphasis on knowledge, research, experience
+                  and professionalism.
+                </p>
+                <a href="careers.html" class="work-with-us-btn">
+                  <button
+                    id="work-with-us-btn"
+                    type="button"
+                    class="secondary-btn btn"
+                  >
+                    APPLY NOW
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Locations -->
+      <section class="locations">
+        <div class="container-lg">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="location-wrapper">
+                <div class="locations-inner">
+                  <h2 class="head-two">Locations</h2>
+                  <ul class="location-list">
+                    <li class="location-item">
+                      <a href="" class="location-link">CHENNAI &nbsp</a>
+                    </li>
+                    <li class="location-item">
+                      <a href="" class="location-link"
+                        >&nbsp | &nbsp HYDERABAD</a
+                      >
+                    </li>
+                    <li class="location-item">
+                      <a href="" class="location-link"
+                        >&nbsp | &nbsp BENGALURU</a
+                      >
+                    </li>
+                    <li class="location-item">
+                      <a href="" class="location-link"
+                        >&nbsp | &nbsp GURGAON (NEW DELHI)</a
+                      >
+                    </li>
+                    <li class="location-item">
+                      <a href="" class="location-link"
+                        >&nbsp | &nbsp VISAKHAPATNAM</a
+                      >
+                    </li>
+                    <li class="location-item">
+                      <a href="" class="location-link"
+                        >&nbsp | &nbsp VIJAYAWADA</a
+                      >
+                    </li>
+                    <li class="location-item">
+                      <a href="" class="location-link">&nbsp | &nbsp GUNTUR</a>
+                    </li>
+                    <li class="location-item">
+                      <a href="" class="location-link"
+                        >&nbsp | &nbsp KAKINADA</a
+                      >
+                    </li>
+                    <li class="location-item">
+                      <a href="" class="location-link">&nbsp | &nbsp TANUKU</a>
+                    </li>
+                    <li class="location-item">
+                      <a href="" class="location-link">&nbsp | &nbsp ADONI</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- footer -->
+                <footer class="footer">
+                  <a href="location.html" class="loc-link">© Brahmayya & Co.</a>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
