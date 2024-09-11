@@ -7,6 +7,9 @@ body {
 h2 {
     font-family: "Ubuntu Condensed";
     font-size: 3.5rem;
+    font-size: 50px;
+    line-height: 52px;
+    font-weight: normal;
 }
 
 .btn {
@@ -75,22 +78,22 @@ ul {
 .right-border {
     border-right: 1px solid #aaaaaa;
 }
-
+.bottom-border {
+    background-color: #fff;
+}
 
 .color-change {
     color: #0aaaaa;
     font-weight: normal;
 }
-
+/********************************** Main Code ******************************/
 .breadcrumb {
     margin-bottom: 0;
 }
-
 .breadcrumb-item.active {
     color: #cccc;
 }
 
-/* Main */
 #navBar {
     border-bottom: 1px solid #e7e7e7;
     background: #fff;
@@ -100,21 +103,9 @@ ul {
     height: 72px;
     top: 0;
 }
-
-#logo {
-    font-size: 2.7rem;
-    font-weight: 700;
-    font-family: 'Roboto Condensed';
-}
-
-.logo-color {
-    color: #808080;
-}
-
 #navbarNav {
     justify-content: end;
 }
-
 .nav-link.navigation-link {
     padding-left: 15px !important;
     padding-right: 15px !important;
@@ -123,97 +114,123 @@ ul {
     font-size: 1.2rem;
     font-weight: 700;
 }
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+#logo {
+    font-family: 'Roboto Condensed';
+    font-size: 2.7rem;
+    font-weight: 700;
+    line-height: 30px;
+}
+.logo-color {
+    color: #808080;
+}
 
 #newsroom-btn {
     margin-top: 5%;
 }
-
 #newsroom-btn:hover {
     color: #0aaaaa;
 }
 
-h2 {
-    font-size: 50px;
-    line-height: 52px;
-    font-weight: normal;
+/************************************** Grouping  ***********************************/
+.who-we-are,
+#what-we-do,
+#sectors,
+.newsroom,
+#work-with-us .withus-content {
+    padding: 50px 0 70px;
 }
 
-.who-we-are {
-    padding: 77px 0 90px;
-}
 .who-we-are .head,
 #sectors .head {
     margin-bottom: 20px;
 }
 
+#what-we-do,
+.newsroom {
+    background: #221f1f;
+    color: #fff;
+}
+
+.newsroom .head,
+.locations .head {
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+.locations,
+.location-wrapper .footer {
+    background-color: #221f1f;
+}
+
 /* banner */
-.Brahmayya-wrapper {
+/* .Brahmaya-wrapper {
     position: relative;
     top: 72px;
-}
+} */
 
 /* Who we are  */
-.half-Wrap {
+#who-we-are {
     position: relative;
-    /* padding: 77px 0 90px */
 }
-
-.half-img {
+#who-we-are .half-img {
     bottom: 0;
     position: absolute;
     top: 0;
     right: 0;
     width: 50%;
+    max-width: 100%;
 }
-.img-fluid.who-we-are-img {
+#who-we-are .who-we-are-img {
     width: 100%;
     height: 100%;
 }
 
 /* What we do */
-#what-we-do {
-    background: #221f1f;
-    padding: 77px 0 90px;
-}
-
-.what-we-do-wrapper {
+#what-we-do .what-we-do-wrapper {
     position: relative;
 }
-
-.what-we-do-wrapper .more-btn{
+.what-we-do-wrapper .more-btn {
     background: #221f1f;
     padding: 10px;
     display: block;
     text-decoration: none;
     text-align: center;
     position: absolute;
-    bottom: -8%;
+    bottom: -7%;
     left: 42%;
 }
 
 /* sectors */
 #sectors {
-    padding: 77px 0 90px;
+    padding-bottom: 20px;
 }
-
-#sectors-inner {
+#sectorsInner {
     padding: 0 15px 70px;
     text-decoration-line: none;
 }
 
-#sectors-inner .sectors-inner-box {
+#sectorsInner .sectorsInner-box {
     border-right: 1px solid #d5d5d5;
     margin-bottom: 20px;
 }
 
-#sectors-inner .sectors-inner-box .sectors-img {
+#sectorsInner .sectorsInner-box .sectors-img {
     display: block;
     margin-bottom: 10px;
     margin: auto;
     text-align: center;
+    width: 50px;
 }
 
-#sectors-inner .sectors-title {
+#sectorsInner .sectors-title {
     display: block;
     text-align: center;
     padding: 30px 0;
@@ -224,25 +241,17 @@ h2 {
     font-family: 'Roboto Condensed';
 }
 
-#sectors-inner .sectors-title:hover {
+#sectorsInner .sectors-title:hover {
     color: #0aaaaa;
 }
 
-#sectors-inner .sectors-inner-box.hide {
+#sectorsInner .sectorsInner-box.hide {
     border: none;
 }
 
 /* newsroom */
 .newsroom {
-    background-color: #221f1f;
-    padding: 77px 0 90px;
-    color: #fff;
-}
-
-.newsroom .head,
-.locations .head {
-    color: #fff;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 }
 
 .newsroom .newsroom-inner .newsroom-title {
@@ -285,24 +294,22 @@ h2 {
 
 /* work with us */
 #work-with-us {
-
     position: relative;
 }
 
 .img-fluid.work-with-us-img {
-    height: 450px;
+    height: 380px;
 }
 
 #work-with-us .withus-content {
-    padding: 77px 0 90px;
     width: 50%;
     padding-bottom: 30px;
     position: absolute;
-    top: 55px;
+    top: 20px;
     color: #fff;
 }
 
-.withus-content .work-with-us-head {
+.withus-content .head-two {
     margin-bottom: 20px;
     color: #fff;
     font-size: 50px;
@@ -317,26 +324,20 @@ h2 {
     font-size: 18px;
 }
 
-.work-with-us-inner .work-with-us-head {
-
-}
-
 #work-with-us .withus-content {
     margin-right: 30%;
 }
 
 /* locations */
-.locations {
-    background-color: #221f1f;
-}
-
 .locations .location-wrapper {
     padding-bottom: 20px;
 }
 
 .location-wrapper .locations-inner {
-    margin-right: 40%;
-    padding: 50px 30px 50px 30px;
+    margin-right: auto;
+    padding: 50px 0 20px;
+    width: 600px;
+    max-width: 100%;
 }
 
 .location-wrapper .location-list {
@@ -361,7 +362,6 @@ h2 {
 
 /* footer */
 .location-wrapper .footer {
-    background-color: #221f1f;
     padding: 20px 30px 20px 30px
 }
 
@@ -483,10 +483,7 @@ h2 {
     width: 100px;
 }
 
-
-
 #nav-tabContent {
-    border-bottom: 1px solid #fff;
     padding-top: 30px;
     padding-bottom: 30px;
     color: #fff;
@@ -499,7 +496,7 @@ h2 {
     margin-left: 16%;
     margin-right: 16%;
     padding-top: 40px;
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
 }
 
 .nav-link.tabbination {
@@ -527,7 +524,6 @@ h2 {
     border-bottom: 1px solid #0aaaaa;
 }
 
-
 .loc-link {
     color: #aaaaaa;
     text-decoration-line: none;
@@ -537,11 +533,6 @@ h2 {
 .loc-link:hover {
     color: #0aaaaa;
     text-decoration-line: none;
-}
-
-.Finance-and-Banking {
-    /* margin: 0 -30px; */
-    /* padding: 60px 30px; */
 }
 
 .Finance-and-Banking-inner h4 {
@@ -599,7 +590,6 @@ h2 {
     padding-left: 0;
     font-weight: 800;
     font-size: 16px;
-    /* padding: 20px 20px 20px 0; */
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link .right-Finance-and-Banking-title {
@@ -680,7 +670,6 @@ h2 {
 
 .contact-radio input { 
     margin-top: 13px;
-    /* margin-bottom: 10px; */
 }
 
 .contact-radio span {
@@ -697,7 +686,7 @@ h2 {
 
 /* Media Queary */
 @media (max-width: 992px) {
-    #sectors-inner .sectors-inner-box {
+    #sectorsInner .sectorsInner-box {
         border: none;
     }
 
@@ -714,9 +703,19 @@ h2 {
         margin: 0;
     }
 
-    /* #v-pills-tab {
-        padding-top: 40px;
-    } */
+    .what-we-do-wrapper .more-btn {
+        bottom: -7%;
+    }
+    .para {
+        padding-bottom: 0px; 
+        margin-bottom: 0;
+    }
+    .banner {
+        margin-top: 70px;
+    }
+    .newsroom {
+        padding: 77px 0 40px;
+    }
 }
 
 
@@ -724,7 +723,6 @@ h2 {
     .half-img {
         display: none;
     }
-
     .who-we-are {
         padding-right: 0;
         padding: 34px 0 40px;
@@ -743,26 +741,61 @@ h2 {
         margin-left: 2%;
         margin-right: 2%;
     }
-
     .newsroom-inner {
         padding-bottom: 40px;
     }
-
     .work-wrapper {
         flex-direction: column;
     }
     .right-border {
         border: none;
     }
-    .para {
-        padding-bottom: 0px; 
-        margin-bottom: 0;
-    }
     #newsroom-btn {
         margin-top: 0%;
     }
     .location-wrapper .locations-inner {
         margin-right: 0%;
+    }
+    .newsroom {
+        padding: 40px 0 50px;
+    }
+    #work-with-us .withus-content {
+        top: 20px;
+    }
+    #work-with-us .withus-content {
+        padding: 77px 0 90px;
+        width: 96%;
+        max-width: 100%;
+        padding-bottom: 30px;
+        position: absolute;
+        top: -20px;
+        color: #fff;
+    }
+    #sectorsInner {
+        padding: 30px 15px 20px;
+        border: 1px solid lightgray;
+        display: block;
+        margin-bottom: 20px;
+    }
+    #sectorsInner .sectors-title {
+        padding: 10px 0; 
+    }
+}
+
+@media (max-width: 576px) {
+    .what-we-do-wrapper .more-btn {
+        bottom: -6%;
+        left: 38%;
+    }
+    .sectors-img {
+        width: 40px;
+    }
+    .sectors-title {
+        padding: 10px 0 !important;
+        font-size: 18px !important;
+    }
+    #work-with-us .withus-content {
+        top: -100px;
     }
 }
 
@@ -784,11 +817,66 @@ h2 {
 
 @media (max-width: 360px) { 
     #logo {
-        font-size: 1.8rem ;
+        font-size: 1.4rem;
         font-weight: 700;
         font-family: sans-serif;
     }
+    .bottom-border {
+        display: none;
+    }
+    .what-we-do-wrapper .more-btn {
+        bottom: -6%;
+        left: 28%;
+    }
+    #work-with-us .withus-content {
+        top: -70px;
+    }
+    .who-we-are .head {
+        padding-bottom: 0px;
+    }
+    h2,
+    .head-two {
+        font-size: 30px !important;
+    }
+    .who-we-are .head, #sectors .head {
+        margin-bottom: 0px;
+    }
+    .contant {
+        line-height: 30px;
+        font-size: 16px;
+    }
+    #what-we-do {
+        padding: 30px 0 70px;
+    }
+    .tab-content>.active {
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+    .withus-content p {
+        line-height: 30px;
+        font-size: 16px;
+    }
+    .withus-content .head-two {
+        margin-bottom: 0;
+    }
+    .newsroom, .locations, .work-with-us-head {
+        padding: 30px 0 0;
+    }
+    .img-fluid.work-with-us-img {
+        height: 350px;
+    }
+    .locations {
+        padding: 0;
+    }
+    .location-wrapper .locations-inner {
+        padding: 30px 10px 10px;
+    }
+    .para {
+        font-size: 16px;
+        line-height: 28px;
+    }
 
 }
+
 
 
